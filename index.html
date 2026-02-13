@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer kareta Modif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dealer Kareta Mokter Jaya</h1>
+        <p>Kareta Kualidade diak, Folin Baratu</p>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mobil">Kareta</a></li>
+            <li><a href="#pesan">Sosa</a></li>
+            <li><a href="#profil">Estudante</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Bemvindo</h2>
+        <p>Ami Prepara ba ita boot sira kareta ho modelo barak no kareta husi Importa husi Nasaun Australia Japaun no Indonesia.</p>
+    </section>
+
+    <section id="Kareta">
+        <h2>Daftar Kareta</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="foto/bus.jpg" alt="Toyota Avanza">
+                <h3>Mitshubishi Bus</h3>
+                <p>Harga: $40.000</p>
+                <button onclick="pesankarreta('Toyota Avanza')">Pesan Agora</button>
+            </div>
+            <div class="card">
+                <img src="foto/ford.jpg" alt="Toyota Avanza">
+                <h3>Mitshubishi Ford</h3>
+                <p>Harga: $25.000</p>
+                <button onclick="pesankarreta('Toyota Avanza')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/gran.jpg" alt="Toyota Avanza">
+                <h3> Mitshubishi GranMax</h3>
+                <p>Harga: $15.000</p>
+                <button onclick="pesankarreta('Toyota Avanza')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/hilu.jpg" alt="Toyota Avanza">
+                <h3>HILUX</h3>
+                <p>Harga: $27.000</p>
+                <button onclick="pesankareta('Toyota Avanza')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/page.jpg" alt="Pajero">
+                <h3> mitshubishi Pajero Sport</h3>
+                <p>Harga: $32.000</p>
+                <button onclick="pesankareta('Mitshubishi Pajero')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/ran.jpg" alt="Mitshubishi ranger">
+                <h3>Mitshubishi Ranger</h3>
+                <p>Folin: $33.000</p>
+                <button onclick="pesanKarreta('mitshubishi ranger')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/rub.jpg" alt="Rubicon">
+                <h3>Mitshubishi Rubicon</h3>
+                <p>Folin: $36.000</p>
+                <button onclick="pesankarreta('Mitshubishi Rubicon')">Pesan Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/swif.jpg" alt="Honda Swift">
+                <h3>Honda swift</h3>
+                <p>Folin: $13.000</p>
+                <button onclick="pesankarreta('Honda Swift')">Manda Agora</button>
+            </div>
+
+            <div class="card">
+                <img src="foto/trek.jpg" alt="Mitsubishi Pajero">
+                <h3>Mitsubishi TRUK</h3>
+                <p>Folin: $30.000</p>
+                <button onclick="pesanKarreta('Mitsubishi Pajero')">Manda Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesan">
+        <h2>Form Sosa</h2>
+        <form id="orderForm">
+            <label>Naran:</label>
+            <input type="text" id="nama" required>
+
+            <label>Telepon:</label>
+            <input type="tel" id="telpon" required>
+
+            <label>KARETA:</label>
+            <select id="mobilSelect">
+                <option value="Toyota Avanza">Toyota Avanza</option>
+                <option value="Honda Brio">Honda Brio</option>
+                <option value="Mitsubishi Pajero">Mitsubishi BUS</option>
+                <option value="Mitsubishi Pajero">Mitsubishi PAJERO SPORT</option>
+                <option value="Mitsubishi Pajero">Mitsubishi FORD</option>
+                <option value="Mitsubishi Pajero">Mitsubishi GRAMMAXX</option>
+                <option value="Mitsubishi Pajero">Mitsubishi TRUK</option>
+                <option value="Mitsubishi Pajero">Mitsubishi RUBICON</option>
+                <option value="Mitsubishi Pajero">Mitsubishi HILUX</option>
+            </select>
+
+            <button type="submit">manda sasan</button>
+        </form>
+    </section>
+
+    <section id="profil">
+        <h2>Estudante</h2>
+        <p><strong>Naran:</strong> Leonardo Preto de Carvalho</p>
+        <p><strong>NRE:</strong> 240102 011034</p>
+        <p><strong>Departamento:</strong> Computer science</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dealer kareta modif</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
